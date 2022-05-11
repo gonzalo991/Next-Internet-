@@ -5,9 +5,9 @@ export const navbarData = [
     label: 'Inicio'
 },
 {
-    routeLink: 'registro',
-    icon: 'fa-solid fa-id-card',
-    label: 'Registro'
+    routeLink: 'contratar',
+    icon: 'fa-solid fa-handshake',
+    label: 'Contratar'
 },
 {
     routeLink: 'ingresar',

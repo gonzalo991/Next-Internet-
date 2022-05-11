@@ -1,5 +1,6 @@
 .sidenav {
-    background: #263238;
+    //background: #263238;
+    background: #0d56df;
     transition: all .5s ease;
     position: fixed;
     z-index: 1;
@@ -102,7 +103,7 @@
 }
 
 .active {
-    background-color: #fff;
+   background-color: #fff;
 
     .sidenav-link-icon,
     .sidenav-link-text {

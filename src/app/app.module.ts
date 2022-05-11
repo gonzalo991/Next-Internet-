@@ -9,9 +9,10 @@ import { BodyComponent } from './body/body.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactoComponent } from './contacto/contacto.component';
-import { RegistroComponent } from './registro/registro.component';
+import { ContratarComponent } from './contratar/contratar.component';
 import { IngresarComponent } from './ingresar/ingresar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormRegistroComponent } from './form-registro/form-registro.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { AppRoutingModule } from './app-routing.module';
     SidenavComponent,
     DashboardComponent,
     ContactoComponent,
-    RegistroComponent,
-    IngresarComponent
+    ContratarComponent,
+    IngresarComponent,
+    FormRegistroComponent
   ],
   imports: [
     BrowserModule,

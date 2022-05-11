@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+section{
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    padding: 0 1.5em;
+
+    .content {
+        max-width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1.5em;
+    
+        .logo {
+            text-align: center;
+            font-size: 3em;
+    
+            i{
+                color: aqua;
+            }
+        }
+    }
+    
+    .contact-wrapper{
+        box-shadow: rgba(255,255,255, .3);
+    }
+}
