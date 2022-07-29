@@ -1,0 +1,74 @@
+.container {
+    height: 90vh;
+    width: 100vw;
+    padding-top: 2rem;
+
+    .card {
+        height: 80%;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border: solid 2px cornflowerblue;
+        width: 30%;
+        border-radius: 20px;
+
+        .card-body {
+            font-size: 1.1rem;
+            color: cornflowerblue;
+
+            form {
+                text-align: center;
+
+                .form-group {
+                    label {
+                        margin: 1.5rem;
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+
+                    input {
+                        border-radius: 10px;
+                        border: solid 1px cornflowerblue;
+                    }
+
+                    input:hover {
+                        border: solid 2px cornflowerblue;
+                    }
+                }
+
+                button {
+                    margin-top: 4rem;
+                    height: 45px;
+                    width: 80%;
+                    border-radius: 10px;
+                    background-color: rgb(72, 120, 223);
+                    color: #fff;
+                    font-size: 1.2rem;
+                }
+
+                button:hover {
+                    background-color: darkblue;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 768px) {
+    .container {
+        height: 90vh;
+        width: 100vw;
+        padding-top: 0.3rem;
+
+        .card {
+            height: 70%;
+            padding-top: 1.5rem;
+            border: solid 2px cornflowerblue;
+            width: 100%;
+
+            .card-body {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

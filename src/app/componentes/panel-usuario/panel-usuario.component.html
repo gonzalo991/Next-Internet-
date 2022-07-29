@@ -1,0 +1,21 @@
+<app-menu></app-menu>
+<div class="container text-center">
+    <div *ngIf="isLogged; else loggedOut">
+        <h2>Bienvenido {{nombreUsuario}}</h2>
+
+        <h3>Panel de Administración de Usuario</h3>
+
+        <iframe src="http://www.google.com" frameborder="0"></iframe>
+       
+    </div>
+    <ng-template #loggedOut>
+        <h2 class="titulo-registro">Gracias por Registrarte en nuestra página</h2>
+        <h3 class="subtitulo-registro">Si aún no lo has hecho da click en el link !Contratar Ahora! de las etiquetas de nuestros planes en el inicio</h3>
+        <p class="info-registro"> Para confirmar tu registro y dar de alta tu plan envianos un whatsapp o un e-mail y se habilitará tu panel de usuario </p>
+        <p class="info-registro">Encontrarás nuestros números de contacto en el footer o en la sección contacto</p>
+        <p class="texto-sinlog">Aún no has Iniciado Sesion</p>
+    </ng-template>
+</div>
+
+
+<app-footer></app-footer>

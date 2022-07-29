@@ -1,0 +1,119 @@
+div {
+    h2 {
+        margin-top: 2rem;
+        color: seagreen;
+    }
+}
+
+
+.body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+
+        .title {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        form {
+            .user-details {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+
+
+                .input-box {
+                    margin-bottom: 15px;
+                    width: calc(100% / 2 - 20px);
+
+                    input {
+                        height: 35px;
+                        width: 100%;
+                        outline: none;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                        padding-left: 15px;
+                        font-size: 16px;
+                        border-bottom-width: 2px;
+                        transition: all 0.3s ease;
+                    }
+
+                    input:focus{
+                        border-color: darkblue;
+                    }
+
+                    input:valid{
+                        border-color: darkblue;
+                    }
+
+                    .details {
+                        display: block;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            .button {
+                height: 45px;
+                margin: 45px 0;
+
+                button{
+                    height: 100%;
+                    width: 100%;
+                    outline: none;
+                    color: #fff;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    letter-spacing: 1px;
+                    background-color: cornflowerblue;
+                }
+
+                button:hover{
+                    background-color: darkblue;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    @media(max-width: 584){
+        .container{
+            max-width: 100%;
+
+            form {
+                .user-details{
+                    max-height: 300px;
+                    overflow: scroll;
+
+                    .input-box{
+                        margin-bottom: 15px;
+                        width: 100%;
+                       
+                    }
+                }
+
+                .user-details::-webkit-scrollbar{
+                    width: 0;
+                }
+            }
+        }
+    }
+}

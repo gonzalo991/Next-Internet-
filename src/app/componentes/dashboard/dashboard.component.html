@@ -1,0 +1,150 @@
+<app-menu></app-menu>
+
+<!--Carrusel-->
+<div id="carrusel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../../assets/img/tecnicotrabajando.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{sectionData[2].subtitulo}}</h5>
+                    <p>{{sectionData[2].texto}}</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assets/img/comunicacion.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{sectionData[1].subtitulo}}</h5>
+                    <p>{{sectionData[1].texto}}</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=" ../../../assets/img/cine-en-casa.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{sectionData[0].subtitulo}}</h5>
+                    <p>{{sectionData[0].texto}}</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<!--header, titulo, servicio, descarga,carga, precio, intalacion, boton-->
+
+<!--Tarjetas de los servicios-->
+<div class="body">
+    <div class="card">
+        <div class="face front">
+            <h2>{{card[0].header}}</h2>
+            <p>{{card[0].servicio}}</p>
+            <p>{{card[0].descarga}} </p>
+            <p>{{card[0].carga}}</p>
+            <p>{{card[0].precio}}</p>
+            <div class="link">
+                <a href="Datails">{{card[0].boton}}</a>
+            </div>
+        </div>
+        <div class="face back">
+            <h3>{{card[0].titulo}}</h3>
+            <p>{{card[0].servicio}}</p>
+            <p>{{card[0].descarga}} </p>
+            <p>{{card[0].carga}}</p>
+            <p>{{card[0].precio}}</p>
+            <div class="link">
+                <a routerLink="/registro">{{card[0].boton}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <h2>{{card[1].header}}</h2>
+            <p>{{card[1].servicio}}</p>
+            <p>{{card[1].descarga}} </p>
+            <p>{{card[1].carga}}</p>
+            <p>{{card[1].precio}}</p>
+            <div class="link">
+                <a href="Datails">{{card[1].boton}}</a>
+            </div>
+        </div>
+        <div class="face back">
+            <h3>{{card[1].titulo}}</h3>
+            <p>{{card[1].servicio}}</p>
+            <p>{{card[1].descarga}} </p>
+            <p>{{card[1].carga}}</p>
+            <p>{{card[1].precio}}</p>
+            <div class="link">
+                <a routerLink="/registro">{{card[1].boton}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <h2>{{card[2].header}}</h2>
+            <p>{{card[2].servicio}}</p>
+            <p>{{card[2].descarga}} </p>
+            <p>{{card[2].carga}}</p>
+            <p>{{card[2].precio}}</p>
+            <div class="link">
+                <a routerLink="/registro">{{card[2].boton}}</a>
+            </div>
+        </div>
+        <div class="face back">
+            <h3>{{card[2].titulo}}</h3>
+            <p>{{card[2].servicio}}</p>
+            <p>{{card[2].descarga}} </p>
+            <p>{{card[2].carga}}</p>
+            <p>{{card[2].precio}}</p>
+            <div class="link">
+                <a routerLink="/registro">{{card[2].boton}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Encabezado de la seccion sobre nosotros-->
+
+<div class="encabezado">
+    <h1 class="text-center">NE<span class="texto-solo">X</span>T</h1>
+    <h2 class="text-center">Sumate a la experiencia</h2>
+    <hr class="line">
+</div>
+
+<div class="info-container">
+    <div class="imagen">
+        <img src="../../../assets/img/que-hace-un-ingeniero-de-telecomunicaciones.jpg" alt="">
+    </div>
+    <div class="text">
+        <h3 class="info-title">Sobre Nosotros</h3>
+        <p class="info-text">NEXT Internet es un proveedor de servicios de internet y consultora en telecomunicaciones
+            que
+            provee soluciones de networking integrales.
+            En nuestra empresa, superamos los desafíos con la incorporación de lo ultimo en tecnología. Nuestra
+            versatilidad
+            tecnológica nos hace superiores damos soluciones tomando de base la experiencia. Maximizar la velocidad y
+            minimizar los costos, son nuestros pilares para lograr el mejor resultado.
+        </p>
+    </div>
+</div>
+
+<app-footer></app-footer>

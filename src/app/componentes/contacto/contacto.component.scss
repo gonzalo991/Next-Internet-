@@ -1,0 +1,42 @@
+p {
+    margin: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: cornflowerblue;
+
+    span {
+        text-decoration: underline;
+        color: darkblue;
+    }
+
+    i {
+        margin: 0.7rem;
+    }
+
+    .fa-whatsapp {
+        color: seagreen;
+    }
+
+    .fa-mail-bulk {
+        color: goldenrod;
+    }
+
+    .fa-map-marker-alt {
+        color: indianred;
+    }
+
+    .fa-globe-americas {
+        color: bisque;
+    }
+}
+
+@media(max-width: 768px) {
+    p {
+        font-size: 1rem;
+        text-align: center;
+
+        i {
+            font-size: 1rem;
+        }
+    }
+}

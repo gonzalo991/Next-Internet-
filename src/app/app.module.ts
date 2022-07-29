@@ -1,29 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { BodyComponent } from './body/body.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { ContratarComponent } from './contratar/contratar.component';
-import { IngresarComponent } from './ingresar/ingresar.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormRegistroComponent } from './form-registro/form-registro.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { LoginComponent } from './componentes/auth/login/login.component';
+import { RegistroComponent } from './componentes/auth/registro/registro.component';
+import { MenuComponent } from './componentes/menu/menu.component';
+import { PanelUsuarioComponent } from './componentes/panel-usuario/panel-usuario.component';
+import { interceptorProvider } from './Interceptors/prod-interceptor.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BodyComponent,
-    SidenavComponent,
     DashboardComponent,
     ContactoComponent,
-    ContratarComponent,
-    IngresarComponent,
-    FormRegistroComponent
+    FooterComponent,
+    LoginComponent,
+    RegistroComponent,
+    MenuComponent,
+    PanelUsuarioComponent
   ],
   imports: [
     BrowserModule,
@@ -31,9 +33,10 @@ import { FormRegistroComponent } from './form-registro/form-registro.component';
     FontAwesomeModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
